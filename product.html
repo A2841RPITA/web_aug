@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <style>
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Product Card */
+        .product {
+            width: 240px;
+            height: 280px;
+
+            background-color: white;
+
+            padding: 12px;
+
+            text-align: center;
+
+            border: 1px solid black;
+            border-radius: 15px;
+
+            box-shadow: 6px 6px 10px gray;
+
+            transition: 0.5s;
+        }
+
+        /* Hover Effect */
+        .product:hover {
+            background-color: #ff0000;
+            transform: scale(1.03);
+            color: white;
+        }
+
+        /* Product Image */
+        .product img {
+            width: 220px;
+            height: 155px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+        }
+
+        /* Product Name */
+        .product h2 {
+            font-size: 24px;
+            margin: 20px 0 15px;
+        }
+
+        /* Price */
+        .product p {
+            font-size: 15px;
+            margin: 0 0 15px;
+        }
+
+        /* Button */
+        .product button {
+            width: 90%;
+            padding: 10px;
+
+            border: none;
+            border-radius: 10px;
+
+            background-color: orange;
+
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: darkorange;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Headphone -->
+    <div class="product">
+
+        <img src="https://images.pexels.com/photos/17743351/pexels-photo-17743351.jpeg">
+
+        <h2>Headphone</h2>
+
+        <p>Rs 2,499</p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <!-- Psita -->
+    <div class="product">
+
+        <img src="https://images.pexels.com/photos/7262750/pexels-photo-7262750.jpeg">
+
+        <h2>Psita</h2>
+
+        <p>Rs 500</p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <!-- Laptop -->
+    <div class="product">
+
+        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg">
+
+        <h2>Laptop</h2>
+
+        <p>Rs 25000</p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <!-- Mobile -->
+    <div class="product">
+
+        <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg">
+
+        <h2>Mobile</h2>
+
+        <p>Rs 9,999</p>
+
+        <button>Buy Now</button>
+
+    </div>
+
+</body>
+</html>
