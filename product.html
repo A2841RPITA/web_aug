@@ -1,148 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+
+    <title>Product Grid</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            background-color: #f2f2f2;
+            background-color: #f5f5f5;
             font-family: Arial, sans-serif;
-
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-
-            gap: 25px;
-            padding: 20px;
         }
 
-        /* Product Card */
-        .product {
-            width: 240px;
-            height: 280px;
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 38px 24px;
+            padding: 40px 35px;
+        }
 
+        .box {
             background-color: white;
-
-            padding: 12px;
-
-            text-align: center;
-
             border: 1px solid black;
-            border-radius: 15px;
-
-            box-shadow: 6px 6px 10px gray;
-
-            transition: 0.5s;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 3px 5px 8px gray;
+            height: 340px;
         }
 
-        /* Hover Effect */
-        .product:hover {
-            background-color: #ff0000;
-            transform: scale(1.03);
-            color: white;
-        }
-
-        /* Product Image */
-        .product img {
-            width: 220px;
-            height: 155px;
-
+        .box img {
+            width: 100%;
+            height: 158px;
             object-fit: cover;
-
             border-radius: 12px;
         }
 
-        /* Product Name */
-        .product h2 {
+        .box h2 {
+            margin-top: 20px;
             font-size: 24px;
-            margin: 20px 0 15px;
         }
 
-        /* Price */
-        .product p {
+        .price {
+            margin-top: 18px;
             font-size: 15px;
-            margin: 0 0 15px;
         }
 
-        /* Button */
-        .product button {
+        .box button {
             width: 90%;
-            padding: 10px;
-
+            height: 35px;
+            margin-top: 18px;
+            background-color: orange;
             border: none;
             border-radius: 10px;
-
-            background-color: orange;
-
             cursor: pointer;
         }
 
-        .product button:hover {
+        .box button:hover {
             background-color: darkorange;
         }
-
     </style>
 </head>
 
 <body>
 
-    <!-- Headphone -->
-    <div class="product">
+    <div class="products">
 
-        <img src="https://images.pexels.com/photos/17743351/pexels-photo-17743351.jpeg">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+            <h2>Headphone</h2>
+            <p class="price">Rs 2,499</p>
+            <button>Buy Now</button>
+        </div>
 
-        <h2>Headphone</h2>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd5c4a7">
+            <h2>Psita</h2>
+            <p class="price">Rs 500</p>
+            <button>Buy Now</button>
+        </div>
 
-        <p>Rs 2,499</p>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+            <h2>Laptop</h2>
+            <p class="price">Rs 25000</p>
+            <button>Buy Now</button>
+        </div>
 
-        <button>Buy Now</button>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379">
+            <h2>Mobile</h2>
+            <p class="price">Rs 9,999</p>
+            <button>Buy Now</button>
+        </div>
 
-    </div>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd5c4a7">
+            <h2>Psita</h2>
+            <p class="price">Rs 500</p>
+            <button>Buy Now</button>
+        </div>
 
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+            <h2>Headphone</h2>
+            <p class="price">Rs 2,499</p>
+            <button>Buy Now</button>
+        </div>
 
-    <!-- Psita -->
-    <div class="product">
-
-        <img src="https://images.pexels.com/photos/7262750/pexels-photo-7262750.jpeg">
-
-        <h2>Psita</h2>
-
-        <p>Rs 500</p>
-
-        <button>Buy Now</button>
-
-    </div>
-
-
-    <!-- Laptop -->
-    <div class="product">
-
-        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg">
-
-        <h2>Laptop</h2>
-
-        <p>Rs 25000</p>
-
-        <button>Buy Now</button>
-
-    </div>
-
-
-    <!-- Mobile -->
-    <div class="product">
-
-        <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg">
-
-        <h2>Mobile</h2>
-
-        <p>Rs 9,999</p>
-
-        <button>Buy Now</button>
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd5c4a7">
+            <h2>Psita</h2>
+            <p class="price">Rs 500</p>
+            <button>Buy Now</button>
+        </div>
 
     </div>
 
 </body>
+
 </html>
+
+
+
