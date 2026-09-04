@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Admin Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background: #1f2937;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+
+        .company {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 13px 10px;
+            margin: 5px 0;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            background: #374151;
+        }
+
+        .logout {
+            margin-top: 30px;
+            background: #dc2626;
+            text-align: center;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 230px;
+            width: calc(100% - 230px);
+            padding: 25px;
+        }
+
+        /* Top Bar */
+        .topbar {
+            background: white;
+            padding: 18px 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .topbar h2 {
+            color: #1f2937;
+        }
+
+        .admin {
+            font-weight: bold;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        .card p {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #111827;
+        }
+
+        /* Sections */
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-header h2 {
+            color: #1f2937;
+        }
+
+        /* Button */
+        .add-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 13px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background: #f9fafb;
+        }
+
+        /* Review */
+        .review {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .review button {
+            background: #16a34a;
+            color: white;
+            border: none;
+            padding: 7px 12px;
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media(max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .sidebar {
+                width: 180px;
+            }
+
+            .main {
+                margin-left: 180px;
+                width: calc(100% - 180px);
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="company">
+            TechNova
+        </div>
+
+        <ul>
+            <li>🏠 Overview</li>
+            <li>👥 Employees</li>
+            <li>💰 Payroll</li>
+            <li>🏢 Department</li>
+            <li>📅 Attendance</li>
+            <li>🔔 Notification</li>
+            <li>⭐ Work Review</li>
+            <li>⚙️ Settings</li>
+            <li class="logout">🚪 Logout</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top Bar -->
+        <div class="topbar">
+            <h2>Employee Dashboard</h2>
+
+            <div class="admin">
+                👤 Admin
+            </div>
+        </div>
+
+
+        <!-- Dashboard Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p>50</p>
+            </div>
+
+            <div class="card">
+                <h3>Present Today</h3>
+                <p>45</p>
+            </div>
+
+            <div class="card">
+                <h3>On Leave</h3>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <h3>Departments</h3>
+                <p>6</p>
+            </div>
+
+        </div>
+
+
+        <!-- Employee Section -->
+        <div class="section">
+
+            <div class="section-header">
+                <h2>Employees</h2>
+
+                <button class="add-btn">
+                    + Add Employee
+                </button>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>EMP001</td>
+                    <td>Rahul Das</td>
+                    <td>IT</td>
+                    <td>Developer</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>EMP002</td>
+                    <td>Priya Roy</td>
+                    <td>HR</td>
+                    <td>HR Manager</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>EMP003</td>
+                    <td>Amit Sen</td>
+                    <td>Finance</td>
+                    <td>Accountant</td>
+                    <td>Active</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <!-- Work Review -->
+        <div class="section">
+
+            <div class="section-header">
+                <h2>Employee Work Review</h2>
+            </div>
+
+            <div class="review">
+                <span>Rahul Das - Website Development</span>
+                <button>Review</button>
+            </div>
+
+            <div class="review">
+                <span>Priya Roy - HR Management</span>
+                <button>Review</button>
+            </div>
+
+            <div class="review">
+                <span>Amit Sen - Monthly Report</span>
+                <button>Review</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

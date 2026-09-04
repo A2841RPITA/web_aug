@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Operators - Action on Data
+
+
+        // 1. Arithmetic Operators
+        // +, -, /, *, %(Remainder)
+
+        let x = 10;
+        let y = 5;
+
+        console.log(x + y);    // 15
+        console.log(x - y);    // 5
+        console.log(x / y);    // 2
+        console.log(x * y);    // 50
+        console.log(x % y);    // 0
+
+
+        // 2. Assignment Operator
+
+        let score = 5;
+
+        // score = score + 3;
+
+        score += 3;
+
+        console.log(score);    // 8
+
+
+        // 3. Comparison Operator - Boolean Data type
+
+        let a = 10;
+        let b = 8;
+
+        console.log(a > b);    // true
+        console.log(a < b);    // false
+
+
+        let xyz = 15;
+        let pqr = 15;
+
+        console.log(xyz >= pqr);    // true
+
+        console.log(xyz <= pqr);    // true
+
+
+        // == : It will only check the VALUE
+
+        let height1 = 100;
+        let height2 = "100";
+
+        console.log(height1 == height2);    // true
+
+
+        // === : It will check both VALUE and DATA TYPE
+
+        console.log(height1 === height2);   // false
+
+
+        // Logical Operators - AND, OR, !
+
+        
+        // AND - && 
+        // Both conditions must be TRUE
+        // Then only output is TRUE
+
+        let isMember = false;
+
+        let TotalBill = 1000;
+
+        console.log(isMember && TotalBill >= 800);
+        // false
+
+
+        // OR - ||
+        // At least 1 condition is TRUE
+        // Then output is TRUE
+
+        console.log(isMember || TotalBill >= 800);
+        // true
+
+
+        // ! - NOT
+        // Flip / Opposite value
+
+        console.log(!isMember);
+        // true
+
+
+    </script>
+
+</body>
+
+</html>
