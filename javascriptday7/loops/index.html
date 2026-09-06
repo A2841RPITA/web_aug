@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops and Arrays</title>
+</head>
+
+<body>
+
+    <script>
+
+        // =========================================
+        // JAVASCRIPT LOOPS
+        // =========================================
+
+        // RULE:
+        // CONDITION IS TRUE -> LOOP STARTS
+        // CONDITION IS FALSE -> LOOP STOPS
+
+
+        // =========================================
+        // 1. FOR LOOP
+        // =========================================
+
+        // Syntax:
+        // for (start point; condition; operation) {
+        //     Task
+        // }
+
+
+        // Print Number 1 to 10
+
+        console.log("----- FOR LOOP: 1 to 10 -----");
+
+        for (let i = 1; i <= 10; i++) {
+
+            console.log("The value of i is", i);
+
+        }
+
+
+        // Print Number 10 to 1
+
+        console.log("----- FOR LOOP: 10 to 1 -----");
+
+        for (let i = 10; i >= 1; i--) {
+
+            console.log("The value of i is", i);
+
+        }
+
+
+        // =========================================
+        // 2. WHILE LOOP
+        // =========================================
+
+        // Syntax:
+        // while (condition) {
+        //     Task
+        // }
+
+
+        // Login Attempt Example
+
+        console.log("----- WHILE LOOP: Login Attempts -----");
+
+        let count = 1;
+
+        while (count <= 5) {
+
+            console.log("Login Attempt", count);
+
+            count++;
+
+        }
+
+
+        // Another While Loop Example
+        // Print Number 1 to 5
+
+        console.log("----- WHILE LOOP: 1 to 5 -----");
+
+        let number = 1;
+
+        while (number <= 5) {
+
+            console.log("Number is", number);
+
+            number++;
+
+        }
+
+
+        // =========================================
+        // 3. DO...WHILE LOOP
+        // =========================================
+
+        // Syntax:
+        // do {
+        //     Task
+        // } while (condition);
+
+
+        // Print Number 1 to 5
+
+        console.log("----- DO WHILE LOOP: 1 to 5 -----");
+
+        let x = 1;
+
+        do {
+
+            console.log("The value of x is", x);
+
+            x++;
+
+        } while (x <= 5);
+
+
+        // =========================================
+        // DO WHILE IMPORTANT EXAMPLE
+        // =========================================
+
+        // do...while loop runs AT LEAST ONE TIME
+        // even if the condition is false.
+
+        console.log("----- DO WHILE: Condition False -----");
+
+        let value = 10;
+
+        do {
+
+            console.log("This will run once");
+
+            value++;
+
+        } while (value < 5);
+
+
+        // =========================================
+        // 4. ARRAY WITH FOR LOOP
+        // =========================================
+
+        console.log("----- ARRAY WITH FOR LOOP -----");
+
+        const fruits = ["Mango", "Orange", "Kiwi"];
+
+
+        // Array Index:
+        // Mango  -> 0
+        // Orange -> 1
+        // Kiwi   -> 2
+
+
+        // Last index = length - 1
+
+        console.log("Array Length:", fruits.length);
+
+        console.log("Last Index:", fruits.length - 1);
+
+
+        // Print all fruits
+
+        for (let k = 0; k <= fruits.length - 1; k++) {
+
+            console.log(fruits[k]);
+
+        }
+
+
+        // =========================================
+        // 5. ARRAY USING length
+        // =========================================
+
+        console.log("----- FRUITS USING LENGTH -----");
+
+        for (let k = 0; k < fruits.length; k++) {
+
+            console.log("Fruit:", fruits[k]);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
