@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+
+    <script>
+        // Function - Helps us to do a specific task
+        // Example: Addition, Calculate Bill
+
+
+        // 1. Function without Parameter
+
+        function Greet() {
+            console.log("Good evening user");
+        }
+
+        Greet(); // Calling the Function
+
+
+
+        // 2. Function with Parameter
+        // Parameter / Argument - Dummy Variable
+
+        function greeting(name) {
+            console.log(`Good evening ${name}, Welcome Back`);
+        }
+
+        greeting("Aarav");
+        greeting("Roshini");
+        greeting("Aman");
+
+
+
+        // 3. Function with Return Type
+
+        function TotlBill(price, quantity) {
+            return price * quantity; // To Give Something Back
+        }
+
+        let result = TotlBill(100, 2);
+
+        console.log(result); // Function returns the value 200
+
+
+
+        // 4. Arrow Function
+        // Logic in a single line or multiple lines
+
+        const abc = () => {
+            console.log("Hello guys I am Arrow function");
+        };
+
+        abc(); // Calling the Arrow Function with variable
+
+    </script>
+
+</body>
+</html>
